@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Poll System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="poll-container">
+    <h1>📊 Interactive Poll</h1>
+    <p class="subtitle">Vote for your favorite programming language!</p>
+
+    <div class="poll-options">
+      <div class="poll-option" onclick="vote('Python')">
+        🐍 Python <span class="vote-count" id="python-count">0%</span>
+      </div>
+      <div class="poll-option" onclick="vote('JavaScript')">
+        ⚡ JavaScript <span class="vote-count" id="js-count">0%</span>
+      </div>
+      <div class="poll-option" onclick="vote('Java')">
+        ☕ Java <span class="vote-count" id="java-count">0%</span>
+      </div>
+      <div class="poll-option" onclick="vote('C++')">
+        💻 C++ <span class="vote-count" id="cpp-count">0%</span>
+      </div>
+    </div>
+
+    <div class="results-bar">
+      <div class="result python-bar"></div>
+      <div class="result js-bar"></div>
+      <div class="result java-bar"></div>
+      <div class="result cpp-bar"></div>
+    </div>
+
+    <button class="reset-btn" onclick="resetPoll()">🔄 Reset Poll</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
